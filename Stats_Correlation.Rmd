@@ -26,10 +26,26 @@ For this example of a correlation analysis, we can use the women data set. Here 
 head(women)
 ```
 
+## Visualizing the trend of the data.
 After obtaining our data set, we can visually inspect the relationship between the two variables:
 ```{r}
 women %>% 
   ggplot(aes(x = height, y = weight)) +
   geom_point(size = 3, alpha = 0.8) +
   theme_classic()
+```
+
+We can see that there is a clear linear trend between these two variables.
+
+## Statistical Analysis
+Now that we know there is most likely a strong linear correlation between the two variables we can compute the correlation coefficient and run Pearson's product-moment correlation test.
+
+Before we run the test we can create our hypothesis:
+H0: The true correlation between the variables is equal to 0
+Ha: The true correlation between the variables in not equal to 0
+
+We can run this test using an alpha of 0.05.
+```{r}
+# Calculating correlation coefficient
+cor(x = women$height, y = women$weight)
 ```
