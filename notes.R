@@ -14,3 +14,8 @@ women %>%
   geom_point(size = 3, alpha = 0.8) +
   theme_classic()
 
+# Calculating correlation coefficient
+cor(x = women$height, y = women$weight)
+
+# Correlation Test
+cor.test(x = women$height, y = women$weight)
