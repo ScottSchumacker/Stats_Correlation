@@ -8,3 +8,20 @@ output: html_document
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
+
+This project will show an example correlation analysis on female height and weight from the 'women' data set on R.
+
+***Loading Packages***
+```{r}
+library(ggplot2)
+library(dplyr)
+library(gridExtra)
+library(tidyr)
+```
+
+## Creating a data set
+For this example of a correlation analysis, we can use the women data set. Here is a preview of the data
+```{r}
+# Preview data
+head(women)
+```
