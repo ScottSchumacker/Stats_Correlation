@@ -49,3 +49,10 @@ We can run this test using an alpha of 0.05.
 # Calculating correlation coefficient
 cor(x = women$height, y = women$weight)
 ```
+
+```{r}
+# Running Pearson's product-moment correlation
+cor.test(x = women$height, y = women$weight)
+```
+
+After running Pearson's product-moment correlation test, we can see that the correlation estimate is 0.995 with a 95% CI (0.986, 0.999) with a p-value < 0.01 (p-value = 1.091e-14). Since our p-value is less than our alpha we can reject the null hypothesis and assume that the true correlation between these variables is not 0.
