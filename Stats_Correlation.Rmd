@@ -25,3 +25,11 @@ For this example of a correlation analysis, we can use the women data set. Here 
 # Preview data
 head(women)
 ```
+
+After obtaining our data set, we can visually inspect the relationship between the two variables:
+```{r}
+women %>% 
+  ggplot(aes(x = height, y = weight)) +
+  geom_point(size = 3, alpha = 0.8) +
+  theme_classic()
+```
