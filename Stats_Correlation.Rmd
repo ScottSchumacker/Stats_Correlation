@@ -42,8 +42,8 @@ Now that we know there is most likely a strong linear correlation between the tw
 
 ***Creating Hypothesis***
 
-Before we run the test we can create our hypothesis:
-H0: The true correlation between the variables is equal to 0
+Before we run the test we can create our hypothesis: <br>
+H0: The true correlation between the variables is equal to 0 <br>
 Ha: The true correlation between the variables in not equal to 0
 
 We can run this test using an alpha of 0.05.
